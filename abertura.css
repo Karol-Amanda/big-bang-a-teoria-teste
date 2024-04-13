@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    position: relative;
+}
+
+img {
+   width: 500px;
+   margin: 0 auto;
+   display: flex;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.teste {
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+a:hover {
+    color: brown;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+img:hover {       
+    content: url(https://i.gifer.com/8ReF.gif);    
+}

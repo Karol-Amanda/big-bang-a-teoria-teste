@@ -1,0 +1,121 @@
+@media(max-width: 1024px) {
+
+    .cabecalho {
+        display: flex;
+        padding: 30px;
+    }
+
+    .cabecalho .logo:hover {
+        color: white;
+        background-image: none;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+        gap: 30px;
+    }
+
+    .home .informacoes {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .personagens .container-personagens {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 425px) {
+    .home .informacoes h1 {
+        font-size: 30px;
+       
+    }
+
+    .home .informacoes p {
+        font-size: 16px;
+      
+    }
+
+    .cabecalho {
+        display: inline;
+    }
+
+    .cabecalho .logo {
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .cabecalho .logo:hover {
+        color: white;
+        background-image: none;
+    
+    }
+
+    .cabecalho .elenco {
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .cabecalho .menu li {
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 10px;
+        text-align: center;
+    }
+     
+    .home .container-foto img {
+        max-width: 320px;
+    }
+
+    .personagens {
+        padding: 30px;
+    }
+}
+
+@media(max-width: 375px) {
+    .cabecalho {
+        display: inline;
+    }
+
+    .cabecalho .logo {
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .cabecalho .logo:hover {
+        color: white;
+        background-image: none;
+    
+    }
+
+    .cabecalho .elenco {
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .cabecalho .menu li {
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+     
+    .home .container-foto img {
+        max-width: 320px;
+    }
+
+    .personagens {
+        padding: 20px;
+    }
+}

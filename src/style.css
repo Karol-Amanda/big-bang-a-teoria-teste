@@ -1,0 +1,245 @@
+html {
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right, #28293E, #2e263d,#581423, #4D3B15, #714441);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+    /*Cor teste*/
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    max-width: 1120px;
+    /*Centalizou - largura maxima de 1120px*/
+}
+
+.cabecalho {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    /*Espaço entre os elementos*/
+    align-items: center;
+    padding: 50px;
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+.cabecalho .logo {
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid white;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 45px;
+    font-family: "Raleway", sans-serif;
+    transition: 0.9s;
+}
+
+.cabecalho .logo:hover {
+    text-align: fixed;
+    box-shadow: 0 0 15px white;
+    padding: 10px 10px;
+    width: 120%;
+    height: 150px;
+    border-radius: 60px;
+    cursor: pointer;
+    color: transparent;
+    background-size: 345px 160px;
+    background-image: url(https://i.ytimg.com/vi/3ZkcFEosrsI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gRSgjMA8=&rs=AOn4CLCtb1bZFpjJzGWRpvmt-SQvnfIzuw);
+}
+
+.cabecalho .elenco {
+    font-size: 25px;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid white;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 45px;
+    font-family: "Raleway", sans-serif;
+    transition: 0.9s;
+}
+
+.cabecalho .elenco:hover {
+    border: 2px solid black;
+    color: white;
+    box-shadow: 0px 0px 30px black;
+    text-shadow: 0px 0px 30px black;
+    transition: 1s;
+}
+
+.cabecalho .menu li {
+    font-size: 25px;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid white;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 45px;
+    font-family: "Raleway", sans-serif;
+    transition: 0.9s;
+}
+
+.cabecalho .menu li:hover {
+    border: 2px solid black;
+    color: white;
+    box-shadow: 0px 0px 30px black;
+    text-shadow: 0px 0px 30px black;
+    transition: 1s;
+}
+
+.home {
+    display: flex;
+    min-height: calc(100vh - 125px);
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.home .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    max-width: 50%;
+}
+
+.home .informacoes h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.home .informacoes p {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home .container-foto .foto {
+    max-width: 450px;
+    border-radius: 50%;
+}
+
+.home .container-foto img {
+    width: 100%;
+   
+}
+
+.home .container-foto img:hover {
+transform: scale(1.1);
+transition: 0.5s;
+box-shadow: 0 0 15px black;
+}
+
+.personagens {
+    padding: 70px 0 70px;
+}
+
+.personagens .titulo {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.personagens .container-personagens {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.personagens .personagem {
+    max-width: 260px;
+    max-height: 500px;
+    position: relative;
+    display: none;
+}
+
+.personagens .personagem.ativo {
+    display: block;
+}
+
+.personagens .personagem img {
+    height: 100%;
+}
+
+.personagens .personagem h3 {
+    background-color: black;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: absolute;
+    /*Talvez tirar*/
+    bottom: 0;
+}
+
+.personagens .personagem .descricao {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.personagens .container-personagens .personagem:hover .descricao {
+    opacity: 0.7;
+    background-color: black;
+}
+
+.personagens .btn-mostrar-personagens {
+    background: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.personagens .btn-mostrar-personagens:hover {
+    border: 2px solid black;
+    color: black;
+    box-shadow: 0px 0px 30px black;
+    text-shadow: 0px 0px 30px black;
+    transition: 1s;
+}
+
+.personagens .btn-mostrar-personagens.remover {
+    display: none;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
